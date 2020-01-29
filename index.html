@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timed Coding Quiz</title>
+    <link href="style.css" rel="StyleSheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script> 
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="hsLink">
+            <a href="highscore.html">View Highscores</a>
+            <div id="timer">
+            Time: <p id="timeRem"></p>
+            </div>
+        </div>
+    </header>
+   
+
+    <br>
+
+    <div id="pageContents">
+        <div id="quizBody">
+            <h1>Welcome to the Coding Quiz</h1>
+            <h2>Try to answer the questions as fast as you can. Time will be subtracted for any wrong answers. Go for that S Rank!</h2>
+        </div>
+        <div></div>
+        <button type="button"  onclick="quiz()" id="startBtn">Start Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
