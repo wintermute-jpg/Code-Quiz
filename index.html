@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
     <title>Timed Coding Quiz</title>
     <link href="style.css" rel="StyleSheet">
@@ -23,14 +23,18 @@
     <br>
 
     <div id="pageContents">
-        <div id="quizBody">
+        <!--Start Screen-->
+        <div id="startScreen">
             <h1>Welcome to the Coding Quiz</h1>
             <h2>Try to answer the questions as fast as you can. Time will be subtracted for any wrong answers. Go for that S Rank!</h2>
+            <button type="button"  onclick="startQuiz()" id="startBtn">Start Quiz</button>
         </div>
-        <div></div>
-        <button type="button"  onclick="quiz()" id="startBtn">Start Quiz</button>
-    </div>
 
+        <!-- Question Content -->
+        <div id="quizBody" class="hide">
+            <h2 id="question"></h2>
+            <div id ="choicesContainer"></div>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>
